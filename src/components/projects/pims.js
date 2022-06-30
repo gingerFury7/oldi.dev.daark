@@ -130,7 +130,7 @@ const Pims = () => {
                         <PdfImg src='https://res.cloudinary.com/dxjubrqnd/image/upload/v1656403710/daark/Projects/pdf-svgrepo-com_de5k7n.svg' />
                         
                     </a>
-                    <a href='/projects/Итог1.pdf' download="pims">
+                    <a href='/projects/pims.pdf' download="pims">
                         <PdfText style={{fontWeight: "400"}}>{t('download')}</PdfText>
                     </a>
                 </LinkContainer>
