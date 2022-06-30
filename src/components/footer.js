@@ -12,7 +12,7 @@ const Footer = ({ height }) => {
         <footer style={{ height: `${height}` }}>
             <Container>
                 <Link to="/">
-                    <Logo src="/Logo/logo-white.svg" alt="logo-white"></Logo>
+                    <Logo src="/Logo/logo_white.svg" alt="logo-white"></Logo>
                 </Link>
 
                 <Navigation>
@@ -26,10 +26,10 @@ const Footer = ({ height }) => {
                 </Navigation>
                 <Contacts>
                     <Title>
-                    {t('contacts')}
+                        {t('contacts')}
                     </Title>
                     <MobileLink href="tel:+79999797515" className="tertiaryButtonText">+79999797515</MobileLink>
-                    <MobileLink href="mailto:hello@daark.ru" className="tertiaryButtonText">hello@daark.ru</MobileLink>
+                    <MobileLink href="mailto:hello@oldi.dev" className="tertiaryButtonText">hello@oldi.dev</MobileLink>
                 </Contacts>
                 <Address>
                     <Title> {t('address')}</Title>
@@ -61,18 +61,20 @@ const Container = styled.div`
 `
 
 const Logo = styled.img`
-    margin: 10px 0px;
+    margin: 6px 0px;
+    width: 120px;
+    height: 32px;
 
     @media screen and (max-width: 767px){
-        height: 32px;
-        width: 112px;
+        height: 52px;
+        width: 190px;
     }
 `
 
 const Navigation = styled.div`
     width: fit-content;
     height: fit-content;
-    margin: 12px 0px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -107,7 +109,7 @@ const Title = styled.h4`
 const Contacts = styled.div`
     width: fit-content;
     height: fit-content;
-    margin: 12px 0px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -122,7 +124,7 @@ const MobileLink = styled.a`
 const Address = styled.div`
     width: fit-content;
     height: fit-content;
-    margin: 12px 0px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

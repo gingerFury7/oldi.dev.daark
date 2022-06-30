@@ -28,7 +28,7 @@ const Header = () => {
                 </Link>
                 <HeaderContent>
                     <li>
-                        <Link to="/" className="mobile-logo">
+                        <Link to="/" className="logo">
                             <Logo src="/Logo/logo.svg" alt="logo"></Logo>
                         </Link>
                     </li>
@@ -58,8 +58,8 @@ const Header = () => {
                                                 style={{
                                                     opacity: currentLanguageCode === code ? 0.5 : 1,
                                                 }}
-                                            ></span>
-                                            {name}
+                                            >{name}</span>
+                                            
                                         </a>
                                     </li>
                                 ))
@@ -68,7 +68,7 @@ const Header = () => {
                         </ul>
                     </li>
                 </HeaderContent>
-                <MenuToggle id="menu-toggle" checked={isChecked} type="checkbox" onChange={() => setIsChecked(!isChecked)}/>
+                <MenuToggle id="menu-toggle" checked={isChecked} type="checkbox" onChange={() => setIsChecked(!isChecked)} />
                 <MenuButtonContainer class='menu-button-container' for="menu-toggle">
                     <div class='menu-button'>
                         <LangIcon src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1654690002/daark/language-svgrepo-com_1_m9lhvo.svg" />
@@ -87,10 +87,9 @@ const Header = () => {
                                 >
                                     <span
                                         style={{
-                                            opacity: currentLanguageCode === e.code ? 0.5 : 1,
+                                            opacity: currentLanguageCode == e.code ? 0.5 : 1,
                                         }}
-                                    ></span>
-                                    {e.name}
+                                    >{e.name}</span>
                                 </a></li>
                         ))
                     }
@@ -115,7 +114,7 @@ const HeaderContainer = styled.div`
     z-index: 2;
 
     @media screen and (max-width: 767px){
-        height: 64px;
+        height: 65px;
         width: 100%;
         justify-content: center;
     }
@@ -200,8 +199,8 @@ const HeaderContent = styled.ul`
 `;
 
 const Logo = styled.img`
-    width: 74px;
-    height: 20px;
+    width: 120px;
+    height: 32px;
 
     @media screen and (max-width: 767px){
         height: 32px;
@@ -214,8 +213,8 @@ const LogoMobile = styled.img`
 
     @media screen and (max-width: 767px){
         display: block;
-        height: 32px;
-        width: 112px;
+        height: 52px;
+        width: 190px;
     }
 `
 
@@ -244,7 +243,7 @@ const MobileMenu = styled.ul`
     @media screen and (max-width: 767px) {
         display: flex;
         position: absolute;
-        top: 0;
+        top: 5px;
         margin-top: 60px;
         right: 24px;
         flex-direction: column;
@@ -267,6 +266,7 @@ const MenuButtonContainer = styled.label`
     @media screen and (max-width: 767px) {
         display: flex;
         position: absolute;
+        top: 5px;
         right: 24px;
     }
 

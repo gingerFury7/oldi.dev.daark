@@ -16,7 +16,7 @@ const AfterPopUp = ({ closeAfter }) => {
     return (
         <Wrapper>
             <Container>
-                <PopUpImg src="/Logo/logo-big.svg" alt="logo" />
+                <PopUpImg src="/Logo/logo.svg" alt="logo" />
                 <PopUpInfo className="tertiaryButtonText">{t('thanks')}<p>{t('will_connect')}</p></PopUpInfo>
             </Container>
         </Wrapper>
@@ -69,10 +69,14 @@ const Container = styled.div`
 `
 
 const PopUpImg = styled.img`
-    margin-top: 3em; 
+    margin-top: 2em; 
+    width: 200px;
+    height: 35px;
 
     @media screen and (max-width: 767px){
-        width: 148px;
+        height: 55px;
+        width: 200px;
+        margin-top: 2.5em;
     }
 `
 
