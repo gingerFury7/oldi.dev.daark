@@ -24,12 +24,12 @@ const Header = () => {
         <header className="header">
             <HeaderContainer>
                 <Link to="/" className="mobile-logo" >
-                    <LogoMobile src="/Logo/logo_new3.svg" alt="logo"></LogoMobile>
+                    <LogoMobile src="/Logo/logo.svg" alt="logo"></LogoMobile>
                 </Link>
                 <HeaderContent>
                     <li>
                         <Link to="/" className="logo">
-                            <Logo src="/Logo/logo_new3.svg" alt="logo"></Logo>
+                            <Logo src="/Logo/logo.svg" alt="logo"></Logo>
                         </Link>
                     </li>
                     <li>
@@ -199,8 +199,8 @@ const HeaderContent = styled.ul`
 `;
 
 const Logo = styled.img`
-    width: 162px;
-    height: 20px;
+    width: 120px;
+    height: 32px;
 
     @media screen and (max-width: 767px){
         height: 32px;
@@ -213,8 +213,8 @@ const LogoMobile = styled.img`
 
     @media screen and (max-width: 767px){
         display: block;
-        height: 62px;
-        width: 200px;
+        height: 52px;
+        width: 190px;
     }
 `
 
@@ -243,7 +243,7 @@ const MobileMenu = styled.ul`
     @media screen and (max-width: 767px) {
         display: flex;
         position: absolute;
-        top: 0;
+        top: 5px;
         margin-top: 60px;
         right: 24px;
         flex-direction: column;
@@ -266,6 +266,7 @@ const MenuButtonContainer = styled.label`
     @media screen and (max-width: 767px) {
         display: flex;
         position: absolute;
+        top: 5px;
         right: 24px;
     }
 

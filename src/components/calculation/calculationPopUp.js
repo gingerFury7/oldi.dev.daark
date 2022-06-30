@@ -20,7 +20,7 @@ const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('service_5sk3e0o', 'template_g533gjq', e.target, 'OJENSqLL1MSqI7wvN');
+        emailjs.sendForm('service_a8lisud', 'template_5u3u68n', e.target, 'OJENSqLL1MSqI7wvN');
         closePopUp();
         openAfter();
     }
@@ -50,7 +50,7 @@ const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
                             <img src="/Calculation/delete-disabled.svg"></img>
                         </CloseBtn>
                     </CloseBtnContainer>
-                    <PopUpImg src="/Logo/logo_new3.svg" alt="logo" />
+                    <PopUpImg src="/Logo/logo.svg" alt="logo" />
                     <PopUpInfo className="tertiaryButtonText">{t('enter_email')}</PopUpInfo>
                     <PopUpInput placeholder={`${t('name')}`} name="from_name" required></PopUpInput>
                     <PopUpInput placeholder="Email*" type="email" name="from_email" required></PopUpInput>
@@ -110,13 +110,14 @@ const PopUpContainer = styled.form`
 `
 
 const PopUpImg = styled.img`
-    margin-top: 3em; 
+    margin-top: 2em; 
     width: 200px;
-    height: 25px;
+    height: 35px;
 
     @media screen and (max-width: 767px){
-        height: 32px;
-        width: 250px;
+        height: 55px;
+        width: 200px;
+        margin-top: 2.5em;
     }
 `
 

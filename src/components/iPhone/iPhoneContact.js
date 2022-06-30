@@ -19,8 +19,8 @@ const IphoneContact = () => {
             </Mobile>
             <Email>
                 <MobileTitle className="SF_bodySmall">email</MobileTitle>
-                <MobileLink className="SF_body" href="mailto:hello@daark.ru" >
-                    hello@daark.ru
+                <MobileLink className="SF_body" href="mailto:hello@oldi.dev" >
+                    hello@oldi.dev
                 </MobileLink>
             </Email>
             <Address>
