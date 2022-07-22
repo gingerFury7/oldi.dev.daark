@@ -72,7 +72,7 @@ const Main = () => {
                                 </OpenBtn>
                             </Link>
                         </AppContainer>
-                        {/* <AppContainer>
+                        <AppContainer>
                             <AppInfo>
                                 <AppImg src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1653568134/daark/iPhoneImage/AppIcon/FS_sjmtrv.svg" alt="FootSkill"></AppImg>
                                 <AppName>
@@ -85,7 +85,7 @@ const Main = () => {
                                     <span className="buttonText">{t('open')}</span>
                                 </OpenBtn>
                             </Link>
-                        </AppContainer> */}
+                        </AppContainer>
                         <Outlet />
                         {/* </IphoneMainContainer> */}
                     </MobileScreen>

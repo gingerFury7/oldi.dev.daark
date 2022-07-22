@@ -173,13 +173,19 @@
       "name": "FootSkill",
       "swiper": [
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653565954/daark/Projects/fs/1_lmaaln.jpg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658502425/daark/Projects/fs/IMG_1146_yekv4o.png"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653565950/daark/Projects/fs/2_rwkjek.jpg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658502425/daark/Projects/fs/IMG_1145_zfzzct.png"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653565959/daark/Projects/fs/3_iakue0.jpg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658502425/daark/Projects/fs/IMG_1143_va7wgo.png"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658502425/daark/Projects/fs/IMG_1142_jeode6.png"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658502424/daark/Projects/fs/IMG_1144_twz0o1.png"
         }
       ],
       "techology": [
@@ -200,8 +206,8 @@
           "name": "Axios"
         }
       ],
-      "cost": 10000,
-      "costUSD": 2000
+      "cost": 800000,
+      "costUSD": 10000
     }
   ]
 }
