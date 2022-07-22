@@ -149,7 +149,7 @@ const FootSkill = () => {
                 </Techonolgy>
 
                 <CostContainer>
-                <CostTitle>{t('cost')} </CostTitle>
+                    <CostTitle>{t('cost')} </CostTitle>
                     <Cost>{t('from')} {price.toString().split('').reverse().map((e, i) =>
                         e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
                     ).reverse().join('')} {money}</Cost>

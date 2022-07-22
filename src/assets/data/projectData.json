@@ -204,6 +204,18 @@
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566639/daark/Projects/technology/axios_kff2hf.svg",
           "name": "Axios"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566643/daark/Projects/technology/swift_dsfbkk.svg",
+          "name": "Swift"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658505925/daark/Projects/technology/SwiftUi_eu1nvj.svg",
+          "name": "SwiftUI"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566641/daark/Projects/technology/java_mmq165.svg",
+          "name": "Java"
         }
       ],
       "cost": 800000,
