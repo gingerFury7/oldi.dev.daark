@@ -194,6 +194,10 @@
           "name": "Figma"
         },
         {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658506419/daark/Projects/technology/Strapi_pkwo8z.svg",
+          "name": "Strapi"
+        },
+        {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566641/daark/Projects/technology/js_j8f0hc.svg",
           "name": "JavaScript"
         },
@@ -212,6 +216,10 @@
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658505925/daark/Projects/technology/SwiftUi_eu1nvj.svg",
           "name": "SwiftUI"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658506157/daark/Projects/technology/ruby_lz38oc.svg",
+          "name": "Ruby"
         },
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566641/daark/Projects/technology/java_mmq165.svg",
