@@ -266,7 +266,7 @@ const MenuButtonContainer = styled.label`
     @media screen and (max-width: 767px) {
         display: flex;
         position: absolute;
-        top: 5px;
+        top: 6px;
         right: 24px;
     }
 
