@@ -198,6 +198,10 @@
           "name": "Strapi"
         },
         {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1658829306/daark/Projects/technology/react-admin_wbfzjb.svg",
+          "name": "React Admin"
+        },
+        {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653566641/daark/Projects/technology/js_j8f0hc.svg",
           "name": "JavaScript"
         },
