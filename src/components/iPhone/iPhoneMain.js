@@ -57,7 +57,7 @@ const IphoneMain = () => {
                 <AppInfo>
                     <img src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1658761460/daark/iPhoneImage/AppIcon/fs_logo_x43bxn.svg" alt="FootSkill"></img>
                     <AppName>
-                        <div className="SF_h3">FootSkill</div>
+                        <div className="SF_h3">Foot Skill</div>
                         <div className="SF_body dark-grey">{t('fs_description')}</div>
                     </AppName>
                 </AppInfo>
