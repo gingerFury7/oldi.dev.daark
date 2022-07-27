@@ -105,7 +105,7 @@ const MainContainer = styled.div`
     width: 75%;
     max-width: 1000px;
     /* height: 90vh; */
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     margin: 80px auto;
     display: flex;
     flex-direction: row;
