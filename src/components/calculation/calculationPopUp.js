@@ -43,8 +43,8 @@ const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
 
     return (
         <>
-            <PopUpWrapper>
-                <PopUpContainer onSubmit={sendEmail}>
+            <PopUpWrapper onClick={() => closePopUp()}>
+                <PopUpContainer onSubmit={sendEmail} onClick={ e => e.stopPropagation()}>
                     <CloseBtnContainer>
                         <CloseBtn onClick={() => closePopUp()}>
                             <img src="/Calculation/delete-disabled.svg"></img>

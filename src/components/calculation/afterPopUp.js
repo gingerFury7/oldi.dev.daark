@@ -14,12 +14,15 @@ const AfterPopUp = ({ closeAfter }) => {
     }, 3000);
 
     return (
-        <Wrapper>
-            <Container>
+        <Wrapper onClick={() => {
+            closeAfter();
+            removeAnySelection();
+        }}>
+            <Container onClick={(e) => e.stopPropagation()}>
                 <PopUpImg src="/Logo/logo.svg" alt="logo" />
                 <PopUpInfo className="tertiaryButtonText">{t('thanks')}<p>{t('will_connect')}</p></PopUpInfo>
             </Container>
-        </Wrapper>
+        </Wrapper >
     )
 }
 
