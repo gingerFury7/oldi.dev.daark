@@ -1,17 +1,15 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import styled from "styled-components";
-import FooterMobile from "./footerMobile";
 import Footer from "./footer";
 import IPhone from "./iPhone/iPhone";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 
 
 const Contacts = () => {
 
-    let location = useLocation();
+    // let location = useLocation();
     const { t } = useTranslation();
 
     return (

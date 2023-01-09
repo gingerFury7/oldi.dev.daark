@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 const FooterMobile = () => {
@@ -15,7 +14,7 @@ const FooterMobile = () => {
                 <Link to="/" className="contacts-link">
                     <IosTab>
                         {
-                            (location.pathname == '/' || location.pathname == '/pims' || location.pathname == '/vpn' || location.pathname == '/woodcoin' || location.pathname == '/fs')  ?
+                            (location.pathname === '/' || location.pathname === '/pims' || location.pathname === '/vpn' || location.pathname === '/woodcoin' || location.pathname === '/fs')  ?
                                 <>
                                     <TabImg src="/iPhoneImage/TabBar/projects-blue.svg" alt="projects"></TabImg>
                                     <TabLabel className="labelSmall blue">{t('our_projects')}</TabLabel>
@@ -31,7 +30,7 @@ const FooterMobile = () => {
                 <Link to="/contacts" className="contacts-link">
                     <IosTab>
                         {
-                            (location.pathname == '/contacts') ?
+                            (location.pathname === '/contacts') ?
                                 <>
                                     <TabImg src="/iPhoneImage/TabBar/contacts-blue.svg" alt="projects"></TabImg>
                                     <TabLabel className="labelSmall blue">{t('contacts')}</TabLabel>
@@ -47,7 +46,7 @@ const FooterMobile = () => {
                 <Link to="/calculation" className="contacts-link">
                     <IosTab>
                         {
-                            location.pathname == '/calculation' ?
+                            location.pathname === '/calculation' ?
                                 <>
                                     <TabImg src="/iPhoneImage/TabBar/calculation-blue.svg" alt="projects"></TabImg>
                                     <TabLabel className="labelSmall blue">{t('calculator')}</TabLabel>
@@ -64,7 +63,7 @@ const FooterMobile = () => {
                 <Link to="/about" className="contacts-link">
                     <IosTab>
                         {
-                            location.pathname == '/about' ?
+                            location.pathname === '/about' ?
                                 <>
                                     <TabImg src="/iPhoneImage/TabBar/about-blue.svg" alt="projects"></TabImg>
                                     <TabLabel className="labelSmall blue">{t('about')}</TabLabel>

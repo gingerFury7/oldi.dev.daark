@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import IphoneContact from "./iPhoneContact";
 import IphoneMain from "./iPhoneMain";
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const IPhone = ({ bgcolor }) => {
@@ -50,13 +49,13 @@ const IPhone = ({ bgcolor }) => {
                         renderMain(location.pathname)
                     }
                     {
-                        (location.pathname == '/' || location.pathname == '/contacts') ?
+                        (location.pathname === '/' || location.pathname === '/contacts') ?
                             <IosTabBar>
                                 <Tabs>
                                     <Link to="/">
                                         <IosTab>
                                             {
-                                                (location.pathname == '/') ?
+                                                (location.pathname === '/') ?
                                                     <>
                                                         <img src="/iPhoneImage/TabBar/projects-blue.svg" alt="projects"></img>
                                                         <span className="labelSmall blue">{t('our_projects')}</span>
@@ -72,7 +71,7 @@ const IPhone = ({ bgcolor }) => {
                                     <Link to="/contacts">
                                         <IosTab>
                                             {
-                                                (location.pathname == '/contacts') ?
+                                                (location.pathname === '/contacts') ?
                                                     <>
                                                         <img src="/iPhoneImage/TabBar/contacts-blue.svg" alt="projects"></img>
                                                         <span className="labelSmall blue">{t('contacts')}</span>

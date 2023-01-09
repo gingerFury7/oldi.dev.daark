@@ -1,14 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useState } from "react";
 import { observer } from "mobx-react-lite";
-import { getSnapshot } from "mobx-state-tree";
 import styled from "styled-components";
 import { usePersistentStore } from "../../store";
 import CalculationPopUp from "./calculationPopUp";
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import axios from "axios";
 import cookies from 'js-cookie'
-import { languages } from "../..";
+// import { languages } from "../..";
 import AfterPopUp from "./afterPopUp";
 
 
@@ -46,13 +43,13 @@ const CalculationFooter = ({ price }) => {
         removeAnySelection();
     }
 
-    let handleSubmit = () => {
-        setShow(true)
-    }
+    // let handleSubmit = () => {
+    //     setShow(true)
+    // }
 
-    const closePopUp = () => {
-        setShow(false);
-    }
+    // const closePopUp = () => {
+    //     setShow(false);
+    // }
 
     let togglePopUp = () => {
         setShow(!show);
@@ -63,12 +60,12 @@ const CalculationFooter = ({ price }) => {
     }
 
     const currentLanguageCode = cookies.get('i18next') || 'ru'
-    const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
+    // const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
 
     let currency = 0;
     // let cost = 0;
 
-    if (currentLanguageCode == 'en') {
+    if (currentLanguageCode === 'en') {
         const axios = require("axios");
 
         const options = {
@@ -82,14 +79,14 @@ const CalculationFooter = ({ price }) => {
                 currency = Math.ceil(Math.ceil(response.data.Valute.USD.Value) / 10) * 10;
             })
             .then(() => {
-                setCost((currentLanguageCode == 'en') ? Math.ceil(price / currency) : price);
+                setCost((currentLanguageCode === 'en') ? Math.ceil(price / currency) : price);
             })
             .catch(function (error) {
                 console.error(error);
             });
     }
 
-    const money = (currentLanguageCode == 'ru') ? <>&#8381;</> : <>&#36;</>
+    const money = (currentLanguageCode === 'ru') ? <>&#8381;</> : <>&#36;</>
 
 
     return (
@@ -100,40 +97,40 @@ const CalculationFooter = ({ price }) => {
                         <FooterTitle>{t('cost_footer')}</FooterTitle>
                         <Price>
                             {
-                                (currentLanguageCode == 'ru') ?
+                                (currentLanguageCode === 'ru') ?
                                     price.toString().split('').reverse().map((e, i) =>
-                                        e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                                        e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                                     ).reverse().join('') :
                                     cost.toString().split('').reverse().map((e, i) =>
-                                        e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                                        e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                                     ).reverse().join('')
                             } {money}
                         </Price>
                     </CalculationFooterLeft>
                     <CalculationFooterRight>
-                        <FooterBtn className="primaryButtonText" disabled={price == 0} onClick={togglePopUp} style={price == 0 ? { backgroundColor: "var(--LightGrey)", color: "var(--MediumGrey)" } : { backgroundColor: "var(--Blue)" }}>
+                        <FooterBtn className="primaryButtonText" disabled={price === 0} onClick={togglePopUp} style={price === 0 ? { backgroundColor: "var(--LightGrey)", color: "var(--MediumGrey)" } : { backgroundColor: "var(--Blue)" }}>
                             <BigScreen>{t('get_price')}</BigScreen>
                             <MobileText>
                                 {
-                                    (currentLanguageCode == 'ru') ?
+                                    (currentLanguageCode === 'ru') ?
                                         price.toString().split('').reverse().map((e, i) =>
-                                            e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                                            e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                                         ).reverse().join('') :
                                         cost.toString().split('').reverse().map((e, i) =>
-                                            e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                                            e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                                         ).reverse().join('')
                                 } {money}
                             </MobileText>
                         </FooterBtn>
-                        <FooterBtnDelete className="tertiaryButtonText" disabled={price == 0} onClick={handleDelete} style={price == 0 ? { color: "var(--MediumGrey)" } : { color: "var(--Blue)" }}>
+                        <FooterBtnDelete className="tertiaryButtonText" disabled={price === 0} onClick={handleDelete} style={price === 0 ? { color: "var(--MediumGrey)" } : { color: "var(--Blue)" }}>
                             <BigScreen>{t('delete')}</BigScreen>
-                            <MobileImg src={price == 0 ? "/Calculation/delete-disabled.svg" : "/Calculation/delete.svg"} alt="delete-button"></MobileImg>
+                            <MobileImg src={price === 0 ? "/Calculation/delete-disabled.svg" : "/Calculation/delete.svg"} alt="delete-button"></MobileImg>
                         </FooterBtnDelete>
                     </CalculationFooterRight>
                 </CalculationFooterContainer>
             </CalculationFooterWrapper>
             {
-                show ? <CalculationPopUp closePopUp={togglePopUp} openAfter={toggleAfter} price={(currentLanguageCode == 'ru')? price : cost} /> : null
+                show ? <CalculationPopUp closePopUp={togglePopUp} openAfter={toggleAfter} price={(currentLanguageCode === 'ru')? price : cost} /> : null
             }
             {
                 openAfter ? <AfterPopUp closeAfter={toggleAfter}/> : null
@@ -275,24 +272,24 @@ const BigScreen = styled.span`
     }
 `
 
-const PopUpWrapper = styled.div`
-    position: fixed;
-    z-index: 9998;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.8);
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+// const PopUpWrapper = styled.div`
+//     position: fixed;
+//     z-index: 9998;
+//     width: 100%;
+//     min-height: 100vh;
+//     height: auto;
+//     top: 0;
+//     left: 0;
+//     background-color: rgba(0,0,0,.8);
+//     display: flex;
+//     justify-content: center;
+//     align-items: baseline;
 
-    @media screen and (max-width: 1490px){
-        min-height: 150vh
-    }
+//     @media screen and (max-width: 1490px){
+//         min-height: 150vh
+//     }
 
-    @media screen and (max-width: 767px){
-        min-height: 150vh;
-    }
-`
+//     @media screen and (max-width: 767px){
+//         min-height: 150vh;
+//     }
+// `

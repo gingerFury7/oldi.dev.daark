@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 const IphoneMain = () => {

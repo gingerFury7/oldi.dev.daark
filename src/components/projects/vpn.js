@@ -7,11 +7,10 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay"
 
 import Footer from '../footer';
-import { Image, ImageGroup } from 'react-fullscreen-image';
+import {  ImageGroup } from 'react-fullscreen-image';
 import { usePersistentStore } from '../../store';
 import { getSnapshot } from 'mobx-state-tree';
 import { observer } from 'mobx-react-lite';
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import cookies from 'js-cookie';
 
@@ -25,8 +24,8 @@ const Pims = () => {
     const currentLanguageCode = cookies.get('i18next') || 'ru';
 
 
-    const price = (currentLanguageCode == 'ru') ? vpnWorld.cost : vpnWorld.costUSD;
-    const money = (currentLanguageCode == 'ru') ? <>&#8381;</> : <>&#36;</>;
+    const price = (currentLanguageCode === 'ru') ? vpnWorld.cost : vpnWorld.costUSD;
+    const money = (currentLanguageCode === 'ru') ? <>&#8381;</> : <>&#36;</>;
 
     // console.log(pims)
 
@@ -123,7 +122,7 @@ const Pims = () => {
                 </About>
                 <LinkContainer>
                     {
-                        (currentLanguageCode == 'ru') ?
+                        (currentLanguageCode === 'ru') ?
                             <a href='https://apps.apple.com/ru/app/vpnworld/id1624305127?l=ru' target="_blank">
                                 <LinkImage src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567044/daark/Projects/downloadAppStore_ymttuc.svg" />
                             </a>
@@ -162,7 +161,7 @@ const Pims = () => {
                 <CostContainer>
                     <CostTitle>{t('cost')} </CostTitle>
                     <Cost>{t('from')} {price.toString().split('').reverse().map((e, i) =>
-                        e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                        e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                     ).reverse().join('')} {money}</Cost>
                 </CostContainer>
             </Container>

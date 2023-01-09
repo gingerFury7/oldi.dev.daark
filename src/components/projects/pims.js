@@ -8,15 +8,14 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 import Footer from '../footer';
-import { Image, ImageGroup } from 'react-fullscreen-image';
+import {  ImageGroup } from 'react-fullscreen-image';
 import { usePersistentStore } from '../../store';
 import { getSnapshot } from 'mobx-state-tree';
 import { observer } from 'mobx-react-lite';
 
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 import cookies from 'js-cookie'
-import { languages } from '../..';
+// import { languages } from '../..';
 
 
 
@@ -27,12 +26,12 @@ const Pims = () => {
     const pims = getSnapshot(projects.projects[0]);
     const { t } = useTranslation();
     const currentLanguageCode = cookies.get('i18next') || 'ru';
-    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    // const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
 
     // console.log(pims)
 
-    const price = (currentLanguageCode == 'ru') ? pims.cost : pims.costUSD ;
-    const money = (currentLanguageCode == 'ru') ? <>&#8381;</> : <>&#36;</>;
+    const price = (currentLanguageCode === 'ru') ? pims.cost : pims.costUSD ;
+    const money = (currentLanguageCode === 'ru') ? <>&#8381;</> : <>&#36;</>;
 
 
     return (
@@ -154,7 +153,7 @@ const Pims = () => {
                 <CostContainer>
                     <CostTitle>{t('cost')}</CostTitle>
                     <Cost>{t('from')} {price.toString().split('').reverse().map((e, i) =>
-                        e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                        e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                     ).reverse().join('')} {money}</Cost>
                 </CostContainer>
             </Container>

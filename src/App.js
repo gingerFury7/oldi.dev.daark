@@ -1,13 +1,9 @@
-
-import { useEffect } from 'react';
 import Header from './components/header.js'
 import './App.css';
 import {
     BrowserRouter,
     Routes,
     Route,
-    useLocation,
-    withRouter
 } from 'react-router-dom';
 import Contacts from './components/contacts.js';
 import Calculation from './components/calculation/calculation.js';
@@ -29,7 +25,7 @@ const App = () => {
         <div>
             <BrowserRouter basename='/'>
                 <ScrollToTop>
-                <Header />
+                    <Header />
                     <Routes>
                         <Route path='/' element={<Main />} exact>
                             {/* <Route path="pims" element={<Pims />} /> */}

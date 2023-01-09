@@ -1,4 +1,3 @@
-import { remove } from 'mobx';
 import { types } from 'mobx-state-tree';
 
 const AppType = types

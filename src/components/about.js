@@ -1,14 +1,11 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { getSnapshot } from "mobx-state-tree";
 import styled from "styled-components";
 import { usePersistentStore } from "../store";
 import Footer from "./footer";
-import FooterMobile from "./footerMobile";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 import cookies from 'js-cookie'
-import { languages } from "..";
+// import { languages } from "..";
 
 const About = () => {
 
@@ -16,7 +13,7 @@ const About = () => {
     const { t } = useTranslation();
 
     const currentLanguageCode = cookies.get('i18next') || 'ru';
-    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    // const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
 
 
     // console.log(getSnapshot(team.team));
@@ -30,7 +27,7 @@ const About = () => {
                         team.team?.map((e, i) =>
                             <TeamContainer key={i}>
                                 <TeamImg src={e.avatar} alt="avatar" />
-                                <TeamName className="primaryButtonText">{currentLanguageCode == 'ru' ?  e.name : e.nameENG}</TeamName>
+                                <TeamName className="primaryButtonText">{currentLanguageCode === 'ru' ?  e.name : e.nameENG}</TeamName>
                                 <TeamPosition className="tertiaryButtonText">{e.position}</TeamPosition>
                                 <TeamStack>
                                     {

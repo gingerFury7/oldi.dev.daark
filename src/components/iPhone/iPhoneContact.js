@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 const IphoneContact = () => {
@@ -9,7 +8,7 @@ const IphoneContact = () => {
 
     return (
         <IphoneContactsContainer>
-            <img src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1653568463/daark/iPhoneImage/Contacts/avatar_gel4a1.svg"></img>
+            <img src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1653568463/daark/iPhoneImage/Contacts/avatar_gel4a1.svg" alt="avatar"></img>
             <h1 className="SF_h1">{t('Dan')}</h1>
             <Mobile>
                 <MobileTitle className="SF_bodySmall">{t('mobile')}</MobileTitle>

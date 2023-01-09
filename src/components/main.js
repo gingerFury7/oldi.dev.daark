@@ -1,10 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
-import FooterMobile from "./footerMobile";
+// import FooterMobile from "./footerMobile";
 import Footer from "./footer";
 import IPhone from "./iPhone/iPhone";
-import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 const Main = () => {
@@ -201,18 +200,18 @@ const MobileScreen = styled.div`
     }
  `
 
-const IphoneMainContainer = styled.div`
-    width: 100%;
-    height: fit-content;
-    /* margin-left: 8px; */
-    margin: 0px auto;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+// const IphoneMainContainer = styled.div`
+//     width: 100%;
+//     height: fit-content;
+//     /* margin-left: 8px; */
+//     margin: 0px auto;
+//     background-color: white;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
 
-`
+// `
 
 const IphoneMainTitle = styled.div`
     width: 100%;

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, Pagination } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/autoplay"
 
 import Footer from '../footer';
-import { Image, ImageGroup } from 'react-fullscreen-image';
+import {  ImageGroup } from 'react-fullscreen-image';
 import { usePersistentStore } from '../../store';
 import { getSnapshot } from 'mobx-state-tree';
 import { observer } from 'mobx-react-lite';
@@ -22,8 +22,8 @@ const FootSkill = () => {
 
 
     const fs = getSnapshot(projects.projects[3]);
-    const price = (currentLanguageCode == 'ru') ? fs.cost : fs.costUSD;
-    const money = (currentLanguageCode == 'ru') ? <>&#8381;</> : <>&#36;</>;
+    const price = (currentLanguageCode === 'ru') ? fs.cost : fs.costUSD;
+    const money = (currentLanguageCode === 'ru') ? <>&#8381;</> : <>&#36;</>;
 
     // console.log(pims)
 
@@ -120,7 +120,7 @@ const FootSkill = () => {
                 </About>
                 <LinkContainer>
                     {
-                        (currentLanguageCode == 'ru') ?
+                        (currentLanguageCode === 'ru') ?
                             <>
                                 <a href='https://apps.apple.com/ru/app/foot-skill/id1633652809?l=ru' target="_blank">
                                     <LinkImage src="https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567044/daark/Projects/downloadAppStore_ymttuc.svg" />
@@ -162,7 +162,7 @@ const FootSkill = () => {
                 <CostContainer>
                     <CostTitle>{t('cost')} </CostTitle>
                     <Cost>{t('from')} {price.toString().split('').reverse().map((e, i) =>
-                        e = (i % 3 == 0) && (i != 0) ? e.padEnd(2, ` `) : e
+                        e = (i % 3 === 0) && (i !== 0) ? e.padEnd(2, ` `) : e
                     ).reverse().join('')} {money}</Cost>
                 </CostContainer>
             </Container>

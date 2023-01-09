@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Radium from 'radium';
 import { Link, Outlet } from "react-router-dom";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import cookies from 'js-cookie';
@@ -42,7 +41,7 @@ const Header = () => {
                         <Link to="/about" className="tertiaryButtonText" >{t('about')}</Link>
                     </li>
                     <li aria-haspopup="true" style={{ marginTop: "17px" }}>
-                        <span>{languages.find((l) => l.code == currentLanguageCode).name}</span> <i class="arrow down"></i>
+                        <span>{languages.find((l) => l.code === currentLanguageCode).name}</span> <i class="arrow down"></i>
                         <div style={{ height: "15px" }}></div>
                         <ul class="dropdown">
                             {

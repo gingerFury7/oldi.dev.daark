@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useDetectClickOutside } from "react-detect-click-outside";
+import React from "react";
 import styled from "styled-components";
-import OutsideAlerter from "../../hooks/OutsideClose";
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { usePersistentStore } from "../../store";
-import { getSnapshot } from "mobx-state-tree";
-import AfterPopUp from "./afterPopUp";
 
 
 const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
@@ -15,7 +10,7 @@ const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
     const { calculation } = usePersistentStore();
     const { t } = useTranslation();
 
-    let data = calculation;
+    // let data = calculation;
 
     function sendEmail(e){
         e.preventDefault();
@@ -47,7 +42,7 @@ const CalculationPopUp = ({ closePopUp, price, openAfter }) => {
                 <PopUpContainer onSubmit={sendEmail}>
                     <CloseBtnContainer>
                         <CloseBtn onClick={() => closePopUp()}>
-                            <img src="/Calculation/delete-disabled.svg"></img>
+                            <img src="/Calculation/delete-disabled.svg" alt="delete-disable"></img>
                         </CloseBtn>
                     </CloseBtnContainer>
                     <PopUpImg src="/Logo/logo.svg" alt="logo" />
