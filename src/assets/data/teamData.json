@@ -4,7 +4,7 @@
       "avatar": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567197/daark/About/avatars/Tema_jugzdq.png",
       "name": "Артём Семёнов",
       "nameENG": "Artem Semenov",
-      "position": "Product manager",
+      "position": "Product owner",
       "stack": [
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/gitlab_whw9xr.svg"
@@ -48,7 +48,7 @@
       "avatar": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567197/daark/About/avatars/Dan_ffynvn.png",
       "name": "Данила Ворновицкий",
       "nameENG": "Dan Vornovitskii",
-      "position": "UI/UX",
+      "position": "Project manager",
       "stack": [
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/figma_fbxrui.svg"
@@ -111,50 +111,6 @@
         },
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/bootstrap_zzgmva.svg"
-        }
-      ]
-    },
-    {
-      "avatar": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567197/daark/About/avatars/Karim_wcc6on.png",
-      "name": "Ouazmir Abdelkarim",
-      "nameENG": "Ouazmir Abdelkarim",
-      "position": "DevOps engineer",
-      "stack": [
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/docker_fqemxt.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/nodejs_nvy01k.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/npm_j6sriv.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567177/daark/About/html_bzmpcs.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567175/daark/About/css_du9y7i.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/js_s6ycye.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567182/daark/About/ts_z6dz1o.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/react_sj12fz.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/redux_qlhc5d.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/mst_urkwdv.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/bootstrap_zzgmva.svg"
-        },
-        {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/rust_pntiva.svg"
         }
       ]
     },
@@ -225,29 +181,82 @@
         },
         {
           "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/bootstrap_zzgmva.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/docker_fqemxt.svg"
         }
       ]
     },
     {
-      "avatar": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1655806169/daark/About/avatars/Iluha.png",
-      "name": "Илья Ажбекберов",
-      "nameENG": "Ilya Azhbekberov",
-      "position": "Web Designer",
+      "avatar": "https://res.cloudinary.com/dpwbrp0db/image/upload/v1673278186/DAARK/30d40212e2c8811c14117ff71595f86d-sticker_o8ppcg.png",
+      "name": "Игорь  Тонин",
+      "nameENG": "Igor Tonin",
+      "position": "Fullstack developer",
       "stack": [
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/figma_fbxrui.svg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567179/daark/About/php_feazl1.svg"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/ai_sktnjj.svg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/python_whqblf.svg"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/ps_zfygvn.svg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/docker_fqemxt.svg"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567182/daark/About/xd_uiaa0j.svg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567177/daark/About/html_bzmpcs.svg"
         },
         {
-          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/flutter_dvhrbw.svg"
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567175/daark/About/css_du9y7i.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/js_s6ycye.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/bootstrap_zzgmva.svg"
+        }
+      ]
+    },
+    {
+      "avatar": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567197/daark/About/avatars/Karim_wcc6on.png",
+      "name": "Ouazmir Abdelkarim",
+      "nameENG": "Ouazmir Abdelkarim",
+      "position": "DevOps engineer",
+      "stack": [
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567176/daark/About/docker_fqemxt.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/nodejs_nvy01k.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/npm_j6sriv.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567177/daark/About/html_bzmpcs.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567175/daark/About/css_du9y7i.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/js_s6ycye.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567182/daark/About/ts_z6dz1o.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/react_sj12fz.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/redux_qlhc5d.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567178/daark/About/mst_urkwdv.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567174/daark/About/bootstrap_zzgmva.svg"
+        },
+        {
+          "img": "https://res.cloudinary.com/dxjubrqnd/image/upload/v1653567180/daark/About/rust_pntiva.svg"
         }
       ]
     },
